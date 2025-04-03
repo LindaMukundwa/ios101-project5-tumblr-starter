@@ -1,10 +1,10 @@
-# Project 5 - *Name of App Here*
+# Project 5 - *Tumblr Blueprint*
 
-Submitted by: **Your Name Here**
+Submitted by: *Linda Mukundwa**
 
-**Name of your app** is an app that ... [TODO] 
+**Tumblr Blueprint** is an app that utilizes APIs and client-interacting functionality retrieved from the Tumblr API to show on the UI.
 
-Time spent: **X** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
