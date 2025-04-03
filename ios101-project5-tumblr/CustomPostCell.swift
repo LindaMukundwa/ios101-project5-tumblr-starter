@@ -14,15 +14,20 @@ class CustomPostCell: UITableViewCell {
     @IBOutlet weak var postImageView: UIImageView!
     @IBOutlet weak var summaryLabel: UILabel!
     
-    // Configure cell appearance (optional)
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 8, left: 0, bottom: 8, right: 0))
+    }
+    
+    // Making cell look better
     override func awakeFromNib() {
         super.awakeFromNib()
         postImageView.contentMode = .scaleAspectFill  // Fill image area, crop if needed
         postImageView.clipsToBounds = true            // Prevent overflow
         summaryLabel.numberOfLines = 0                // Allow multiline text
         
-        summaryLabel.font = UIFont.systemFont(ofSize: 16, weight: .regular)
-
+        summaryLabel.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+ 
         // Add margin to label
         summaryLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([

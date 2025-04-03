@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.estimatedRowHeight = 400 // Rough estimate
+        tableView.estimatedRowHeight = 200 // Rough estimate
         tableView.rowHeight = UITableView.automaticDimension
         fetchPosts()
     }
