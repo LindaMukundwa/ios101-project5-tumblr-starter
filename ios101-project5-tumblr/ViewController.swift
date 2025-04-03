@@ -11,21 +11,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //print(tableView.value(forKey: "_cellIdentifiers") ?? "No cells registered")
-        
-        // Configure datasource and delegate
         tableView.delegate = self
         tableView.dataSource = self
-        
-        // Set estimated row height if using auto layout
-        tableView.estimatedRowHeight = 300
+        tableView.estimatedRowHeight = 400 // Rough estimate
         tableView.rowHeight = UITableView.automaticDimension
-        
-        // Temporary debug
-        //print("Number of prototype cells:", tableView.numberOfSections)
-        
-        //tableView.register(CustomPostCell.self, forCellReuseIdentifier: "PostCell")
-        
         fetchPosts()
     }
     
